@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portada de Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Fondo rosado */
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 4rem;
+            color: #d81b60; /* Color rosa fuerte */
+            margin: 0;
+        }
+        .button {
+            background-color: #d81b60; /* Color rosa fuerte */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .message {
+            display: none;
+            background-color: #f8bbd0; /* Fondo rosado más claro */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-top: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .message h2 {
+            background-color: #d81b60; /* Fondo rosado fuerte */
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            margin: 0;
+        }
+        .message p {
+            margin: 20px 0;
+        }
+        .message img {
+            max-width: 200px;
+            height: auto;
+            margin-top: 20px;
+        }
+        .hearts {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://cdn.pixabay.com/photo/2017/02/22/14/30/hearts-2085097_960_720.png') repeat;
+            background-size: 100px 100px;
+            opacity: 0.2;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="cover">
+            <h1>Te Amo</h1>
+            <button class="button" onclick="showMessage()">sigue por aqui</button>
+        </div>
+        <div id="message" class="message">
+            <h2>Lo Siento Mucho</h2>
+            <p>Perdon mi amor, mi vida hermosa te he vuelto a fallar y te he vuelto a hacer pasar un mal rato, no sabes cuan mal me hace saber que pasas malos ratos por mi culpa. Voy aprendiendo de mi errores lo juro cada dia aprendo mas mejoro mas encerio puede que no se note tanto pero lo estoy haciendo se que a pesar de hacerlo sigo fallando, perdoname amor te amo mucho mejorare lo prometo :(</p>
+            <img src="https://i.giphy.com/aiAYc1ulnN4dBKl2yz.webp" alt="Osito de peluche">
+        </div>
+    </div>
+    <div class="hearts"></div>
+    <script>
+        function showMessage() {
+            document.getElementById('cover').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
